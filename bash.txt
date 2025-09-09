@@ -1,0 +1,32 @@
+/MedXpert-AI-Cardiac-Abnormality-Detection
+│
+├── /data/
+│   ├── challenge-2020/               # PhysioNet ECG dataset (downloaded)
+│   └── challenge-2020_preprocessed/   # Processed dataset (features, labels)
+│
+├── /notebooks/
+│   └── exploratory_data_analysis.ipynb  # Data exploration and visualization
+│
+├── /src/
+│   ├── __init__.py
+│   ├── data_preprocessing.py          # Preprocessing scripts for ECG signals
+│   ├── cnn_model.py                   # CNN for ECG signal classification
+│   ├── bilstm_model.py                # BiLSTM for temporal analysis
+│   ├── gnn_model.py                  # GNN architecture (if applicable)
+│   ├── medxpert_model.py              # Integrated model with CNN, BiLSTM, and GNN
+│   ├── explainability.py              # SHAP, Grad-CAM, Attention heatmaps
+│   ├── rule_based_system.py          # Rule-based system for additional insights
+│   ├── model_training.py              # Model training (fit, evaluate, hyperparameters)
+│   └── utils.py                      # Utility functions (metrics, visualizations)
+│
+├── /outputs/
+│   ├── model_checkpoints/            # Store trained model weights
+│   ├── results/                      # Evaluation metrics, confusion matrices
+│   └── explainability_plots/         # SHAP, Grad-CAM, attention visualizations
+│
+├── /requirements/
+│   └── requirements.txt              # Python dependencies
+│
+├── README.md
+├── LICENSE
+└── .gitignore
